@@ -10,5 +10,9 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws
+  ws,
+  "com.voxeo.tropo" % "tropo-webapi-java" % "0.3.2"
 )
+
+resolvers += "Uncle Tropos's Public Maven Repo" at "http://maven.tropo.com:8081/nexus/content/groups/public"
+
