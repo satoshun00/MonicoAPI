@@ -41,12 +41,17 @@ object Monico extends Controller {
 //  )
 
   def call = Action {
-    Ok(JsObject(
-      Seq("tropo" -> JsArray(
-          JsObject("call" -> JsObject("to" -> JsString("sip:satoshun00@sip.antisip.com") :: Nil) :: Nil) ::
-          JsObject("say" -> JsObject("value" -> JsString("http://api.fenneclab.com/assets/voices/goodmorning.mp3") :: Nil) :: Nil) :: Nil
+    Ok(
+      JsObject(
+        Seq(
+          "tropo" -> JsArray(
+            Seq(
+              JsObject(Seq("call" -> JsObject(Seq("to" -> JsString("sip:satoshun00@sip.antisip.com"))))),
+              JsObject(Seq("say" -> JsArray(Seq(JsObject(Seq("value" -> JsString("http://api.fenneclab.com/assets/voices/goodmorning.mp3")))))))
+            )
+          )
         )
-      ))
+      )
     )
 //      Ok(JsObject(Seq[
 //          "tropo", JsArray(
