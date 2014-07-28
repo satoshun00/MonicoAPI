@@ -46,7 +46,7 @@ object Monico extends Controller {
         Seq(
           "tropo" -> JsArray(
             Seq(
-              JsObject(Seq("call" -> JsObject(Seq("to" -> JsString("sip:satoshun00@sip.antisip.com"))))),
+              JsObject(Seq("call" -> JsObject(Seq("to" -> JsString("sip:satoshun00@sip.antisip.com"),"network" -> JsString("SIP"))))),
               JsObject(Seq("say" -> JsArray(Seq(JsObject(Seq("value" -> JsString("http://api.fenneclab.com/assets/voices/goodmorning.mp3")))))))
             )
           )
