@@ -6,5 +6,5 @@
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
 # MonicoAPI
-GET     /v1/monico/call             controllers.Monico.call
+POST     /v1/monico/call             controllers.Monico.call
 
